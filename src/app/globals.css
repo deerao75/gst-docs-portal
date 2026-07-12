@@ -12,7 +12,8 @@
   }
 
   html {
-    font-size: 16px;
+    /* ~67% browser zoom feel at 100% zoom (rem-based Tailwind scales with this) */
+    font-size: 67%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;

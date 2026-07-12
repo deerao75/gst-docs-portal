@@ -125,13 +125,13 @@ export default function HomePage() {
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-orange md:text-base">
               Acer Tax &amp; Corporate Services LLP
             </p>
-            <h1 className="mt-5 max-w-2xl text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
+            <h1 className="mt-5 max-w-2xl text-3xl font-bold leading-[1.1] tracking-tight md:text-4xl lg:text-5xl">
               Your complete
               <span className="mt-2 block bg-gradient-to-r from-brand-orange to-amber-400 bg-clip-text text-transparent">
                 GST Reference Library
               </span>
             </h1>
-            <p className="mt-7 max-w-xl text-lg leading-relaxed text-slate-300 md:text-xl">
+            <p className="mt-7 max-w-xl text-base leading-relaxed text-slate-300 md:text-lg">
               Acts, Rules, Finance Acts, Forms, Press Releases, Notifications, Circulars, Orders,
               Instructions and Advisory — built for practitioners, businesses, and compliance teams.
             </p>
