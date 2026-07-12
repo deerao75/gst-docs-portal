@@ -24,8 +24,8 @@ export function setPdfTitle(buffer: Buffer, title: string): Buffer {
   return buffer;
 }
 
-/** Default PDF embed zoom (percent). 67% matches fit-page in Chrome/Edge. */
-export const DEFAULT_PDF_ZOOM = 67;
+/** Default PDF embed zoom (percent) when served inline. */
+export const DEFAULT_PDF_ZOOM = 100;
 
 export function setPdfInitialZoom(buffer: Buffer): Buffer {
   let content = buffer.toString("latin1");

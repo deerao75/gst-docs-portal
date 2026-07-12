@@ -1,3 +1,4 @@
+import { resolveProjectPath } from "@/lib/data-path";
 import { getGstPressReleaseById } from "@/lib/gst-press-releases";
 import { setPdfInitialZoom, setPdfTitle } from "@/lib/pdf-serve";
 import fs from "fs";
@@ -18,10 +19,7 @@ export async function GET(
     return NextResponse.json({ error: "Press release not found" }, { status: 404 });
   }
 
-  let filePath = path.normalize(item.file_path.replace(/\\/g, "/"));
-  if (!path.isAbsolute(filePath)) {
-    filePath = path.resolve(process.cwd(), filePath);
-  }
+  const filePath = resolveProjectPath(item.file_path);
 
   const allowedRoot = path.normalize(
     path.join(process.cwd(), "data", "gst_press_releases")

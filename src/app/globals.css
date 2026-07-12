@@ -12,7 +12,7 @@
   }
 
   html {
-    font-size: 12px; /* ~67% of prior 18px base — comfortable default on live deploy */
+    font-size: 16px;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -90,12 +90,14 @@
   }
 
   .page-heading {
-    @apply text-3xl font-bold tracking-tight text-brand-black md:text-4xl;
+    @apply text-2xl font-bold tracking-tight text-brand-black md:text-3xl;
   }
 
   .page-subheading {
-    @apply mt-2 max-w-2xl text-base leading-relaxed text-[var(--muted)];
+    @apply mt-2 max-w-2xl text-sm leading-relaxed text-[var(--muted)] md:text-base;
   }
+
+
 
   .doc-card {
     @apply relative overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-card transition-all duration-300;
@@ -163,7 +165,11 @@
   }
 
   .viewer-page-header {
-    @apply border-b border-[var(--border)] bg-gradient-to-r from-brand-navy-deep via-brand-navy to-brand-navy-deep px-5 py-5 lg:px-6;
+    @apply border-b border-[var(--border)] bg-gradient-to-r from-brand-navy-deep via-brand-navy to-brand-navy-deep px-5 py-4 lg:px-6;
+  }
+
+  .viewer-page-header h1 {
+    @apply !mt-1 !text-xl !font-bold !tracking-tight md:!text-2xl;
   }
 
   .list-group-header {

@@ -1,3 +1,4 @@
+import { resolveProjectPath } from "@/lib/data-path";
 import { getPdfDocumentById } from "@/lib/db";
 import { setPdfInitialZoom, setPdfTitle } from "@/lib/pdf-serve";
 import fs from "fs";
@@ -18,10 +19,7 @@ export async function GET(
     return NextResponse.json({ error: "Document not found" }, { status: 404 });
   }
 
-  let filePath = path.normalize(doc.file_path);
-  if (!path.isAbsolute(filePath)) {
-    filePath = path.resolve(process.cwd(), filePath);
-  }
+  const filePath = resolveProjectPath(doc.file_path);
 
   const allowedRoots = [
     path.normalize(path.join(process.cwd(), "data", "notifications")),

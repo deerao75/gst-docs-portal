@@ -5,7 +5,7 @@ export async function GET(
   { params }: { params: { slug: string } }
 ) {
   const slug = encodeURIComponent(params.slug);
-  const pdfUrl = `/api/gst-act-pdf/${slug}#page=1&zoom=67`;
+  const pdfUrl = `/api/gst-act-pdf/${slug}#page=1&zoom=100`;
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>

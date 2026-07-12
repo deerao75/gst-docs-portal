@@ -47,6 +47,9 @@ export type TextSection = {
 
 function readJson<T>(filename: string): T {
   const filePath = path.join(process.cwd(), "data", filename);
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Data file missing: ${filePath}`);
+  }
   return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
 }
 

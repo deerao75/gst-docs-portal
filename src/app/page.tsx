@@ -125,23 +125,23 @@ export default function HomePage() {
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-orange md:text-base">
               Acer Tax &amp; Corporate Services LLP
             </p>
-            <h1 className="mt-5 max-w-2xl text-5xl font-bold leading-[1.06] tracking-tight md:text-6xl lg:text-7xl">
+            <h1 className="mt-5 max-w-2xl text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
               Your complete
               <span className="mt-2 block bg-gradient-to-r from-brand-orange to-amber-400 bg-clip-text text-transparent">
                 GST Reference Library
               </span>
             </h1>
-            <p className="mt-7 max-w-xl text-xl leading-relaxed text-slate-300 md:text-2xl">
+            <p className="mt-7 max-w-xl text-lg leading-relaxed text-slate-300 md:text-xl">
               Acts, Rules, Finance Acts, Forms, Press Releases, Notifications, Circulars, Orders,
               Instructions and Advisory — built for practitioners, businesses, and compliance teams.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link href="/documents?type=notification" className="btn-primary !px-8 !py-3.5 !text-lg">
+              <Link href="/documents?type=notification" className="btn-primary !px-7 !py-3 !text-base">
                 Browse Notifications
               </Link>
               <Link
                 href="/acts"
-                className="btn-outline !border-white/30 !bg-white/10 !px-8 !py-3.5 !text-lg !text-white hover:!border-brand-orange hover:!bg-brand-orange"
+                className="btn-outline !border-white/30 !bg-white/10 !px-7 !py-3 !text-base !text-white hover:!border-brand-orange hover:!bg-brand-orange"
               >
                 Explore Acts
               </Link>

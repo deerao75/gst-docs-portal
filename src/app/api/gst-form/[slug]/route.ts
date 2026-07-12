@@ -1,3 +1,4 @@
+import { resolveProjectPath } from "@/lib/data-path";
 import { getGstFormBySlug } from "@/lib/gst-forms";
 import { setPdfInitialZoom, setPdfTitle } from "@/lib/pdf-serve";
 import fs from "fs";
@@ -13,10 +14,7 @@ export async function GET(
     return NextResponse.json({ error: "Form not found" }, { status: 404 });
   }
 
-  let filePath = path.normalize(form.file_path.replace(/\\/g, "/"));
-  if (!path.isAbsolute(filePath)) {
-    filePath = path.resolve(process.cwd(), filePath);
-  }
+  const filePath = resolveProjectPath(form.file_path);
 
   const allowedRoot = path.normalize(path.join(process.cwd(), "data", "gst_forms"));
   if (!filePath.startsWith(allowedRoot)) {

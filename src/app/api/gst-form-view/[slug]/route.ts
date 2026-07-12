@@ -10,7 +10,7 @@ export async function GET(
     return NextResponse.json({ error: "Form not found" }, { status: 404 });
   }
 
-  const pdfUrl = `/api/gst-form/${encodeURIComponent(form.slug)}#page=1&zoom=67`;
+  const pdfUrl = `/api/gst-form/${encodeURIComponent(form.slug)}#page=1&zoom=100`;
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
