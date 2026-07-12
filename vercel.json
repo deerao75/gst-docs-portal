@@ -3,51 +3,5 @@
     "env": {
       "NODE_OPTIONS": "--max-old-space-size=4096"
     }
-  },
-  "functions": {
-    "src/app/api/pdf/[id]/route.ts": {
-      "maxDuration": 30,
-      "includeFiles": [
-        "data/notifications/**",
-        "All Circulars/**",
-        "All Orders/**",
-        "data/instructions/**",
-        "data/admin-uploads/**"
-      ]
-    },
-    "src/app/api/pdf-view/[id]/route.ts": {
-      "maxDuration": 30,
-      "includeFiles": [
-        "data/notifications/**",
-        "All Circulars/**",
-        "All Orders/**",
-        "data/instructions/**",
-        "data/admin-uploads/**"
-      ]
-    },
-    "src/app/api/finance-act/[id]/route.ts": {
-      "includeFiles": "data/finance_acts/**"
-    },
-    "src/app/api/finance-act-view/[id]/route.ts": {
-      "includeFiles": "data/finance_acts/**"
-    },
-    "src/app/api/gst-form/[slug]/route.ts": {
-      "includeFiles": "data/gst_forms/**"
-    },
-    "src/app/api/gst-form-view/[slug]/route.ts": {
-      "includeFiles": "data/gst_forms/**"
-    },
-    "src/app/api/gst-act-pdf/[slug]/route.ts": {
-      "includeFiles": "data/gst_act_pdfs/**"
-    },
-    "src/app/api/gst-act-pdf-view/[slug]/route.ts": {
-      "includeFiles": "data/gst_act_pdfs/**"
-    },
-    "src/app/api/gst-press-release/[id]/route.ts": {
-      "includeFiles": "data/gst_press_releases/**"
-    },
-    "src/app/api/gst-press-release-view/[id]/route.ts": {
-      "includeFiles": "data/gst_press_releases/**"
-    }
   }
 }
