@@ -51,7 +51,7 @@ export default function Nav() {
   }, [pathname]);
 
   const navLinkClass = (active: boolean) =>
-    `rounded-lg px-4 py-2.5 text-base font-semibold transition-all duration-200 ${
+    `rounded-lg px-3.5 py-2 text-sm font-semibold transition-all duration-200 md:px-4 md:py-2.5 md:text-base ${
       active
         ? "bg-brand-orange text-white shadow-sm"
         : "text-brand-black hover:bg-brand-orange-light hover:text-brand-orange-dark"
@@ -66,7 +66,7 @@ export default function Nav() {
             alt="Acer Tax & Corporate Services"
             width={280}
             height={106}
-            className="h-12 w-auto transition-opacity group-hover:opacity-90 md:h-14"
+            className="h-10 w-auto transition-opacity group-hover:opacity-90 md:h-12"
             priority
           />
         </Link>

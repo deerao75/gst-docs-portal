@@ -125,7 +125,7 @@ export default function HomePage() {
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-orange md:text-base">
               Acer Tax &amp; Corporate Services LLP
             </p>
-            <h1 className="mt-5 max-w-2xl text-3xl font-bold leading-[1.1] tracking-tight md:text-4xl lg:text-5xl">
+            <h1 className="mt-5 max-w-2xl text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-[2.75rem]">
               Your complete
               <span className="mt-2 block bg-gradient-to-r from-brand-orange to-amber-400 bg-clip-text text-transparent">
                 GST Reference Library
