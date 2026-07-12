@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-/** HTML shell so Chrome/Edge honour #zoom=100 on the embedded PDF plugin. */
+/** HTML shell so Chrome/Edge honour #zoom= on the embedded PDF plugin. */
 export async function GET(
   _request: NextRequest,
   { params }: { params: { id: string } }
@@ -10,7 +10,7 @@ export async function GET(
     return NextResponse.json({ error: "Invalid ID" }, { status: 400 });
   }
 
-  const pdfUrl = `/api/pdf/${id}#page=1&zoom=100`;
+  const pdfUrl = `/api/pdf/${id}#page=1&zoom=67`;
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>

@@ -12,7 +12,7 @@
   }
 
   html {
-    font-size: 18px;
+    font-size: 12px; /* ~67% of prior 18px base — comfortable default on live deploy */
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;

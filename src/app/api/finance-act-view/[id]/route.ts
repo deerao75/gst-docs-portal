@@ -9,7 +9,7 @@ export async function GET(
     return NextResponse.json({ error: "Invalid ID" }, { status: 400 });
   }
 
-  const pdfUrl = `/api/finance-act/${id}#page=1&zoom=100`;
+  const pdfUrl = `/api/finance-act/${id}#page=1&zoom=67`;
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>

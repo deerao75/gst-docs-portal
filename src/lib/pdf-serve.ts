@@ -24,6 +24,9 @@ export function setPdfTitle(buffer: Buffer, title: string): Buffer {
   return buffer;
 }
 
+/** Default PDF embed zoom (percent). 67% matches fit-page in Chrome/Edge. */
+export const DEFAULT_PDF_ZOOM = 67;
+
 export function setPdfInitialZoom(buffer: Buffer): Buffer {
   let content = buffer.toString("latin1");
   content = content.replace(/ ?\/OpenAction <<[^>]*>>/g, "");
@@ -39,7 +42,7 @@ export function setPdfInitialZoom(buffer: Buffer): Buffer {
   }
 
   const openAction =
-    " /OpenAction << /Type /Action /S /GoTo /D [0 /XYZ null null 1.0] >>";
+    ` /OpenAction << /Type /Action /S /GoTo /D [0 /XYZ null null ${(DEFAULT_PDF_ZOOM / 100).toFixed(2)}] >>`;
   const updated =
     content.slice(0, dictEnd) + openAction + content.slice(dictEnd);
 
