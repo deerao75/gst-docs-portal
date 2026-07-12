@@ -16,6 +16,10 @@ const DATA_FILE = path.join(process.cwd(), "data", "pdf_documents.json");
 const UPLOAD_ROOT = path.join(process.cwd(), "data", "admin-uploads");
 
 export function readAllPdfDocuments(): PdfDocument[] {
+  if (!fs.existsSync(DATA_FILE)) {
+    console.error(`[document-store] missing ${DATA_FILE}`);
+    return [];
+  }
   return JSON.parse(fs.readFileSync(DATA_FILE, "utf-8")) as PdfDocument[];
 }
 

@@ -18,6 +18,10 @@ export type FinanceAct = {
 
 function readCatalog(): FinanceAct[] {
   const filePath = path.join(process.cwd(), "data", "finance_acts.json");
+  if (!fs.existsSync(filePath)) {
+    console.error(`[finance-acts] missing ${filePath}`);
+    return [];
+  }
   return JSON.parse(fs.readFileSync(filePath, "utf-8")) as FinanceAct[];
 }
 

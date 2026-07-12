@@ -45,16 +45,17 @@ export type TextSection = {
   sort_order: number;
 };
 
-function readJson<T>(filename: string): T {
+function readJson<T>(filename: string, fallback: T): T {
   const filePath = path.join(process.cwd(), "data", filename);
   if (!fs.existsSync(filePath)) {
-    throw new Error(`Data file missing: ${filePath}`);
+    console.error(`[db] missing ${filePath}`);
+    return fallback;
   }
   return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
 }
 
 function getAllPdfDocuments(): PdfDocument[] {
-  return readJson<PdfDocument[]>("pdf_documents.json");
+  return readJson<PdfDocument[]>("pdf_documents.json", []);
 }
 
 export function getPdfDocuments(filters?: {
@@ -107,7 +108,7 @@ export function getPdfYears(docType?: string, category?: string): number[] {
 }
 
 export function getTextDocuments(category: "act" | "rule"): TextDocument[] {
-  return readJson<TextDocument[]>("text_documents.json").filter(
+  return readJson<TextDocument[]>("text_documents.json", []).filter(
     (d) => d.doc_category === category
   );
 }
@@ -120,7 +121,7 @@ export function getTextDocumentsWithSections(
   category: "act" | "rule"
 ): TextDocumentWithSections[] {
   const docs = getTextDocuments(category);
-  const allSections = readJson<TextSection[]>("text_sections.json");
+  const allSections = readJson<TextSection[]>("text_sections.json", []);
 
   return docs.map((doc) => ({
     ...doc,
@@ -133,11 +134,11 @@ export function getTextDocumentsWithSections(
 export function getTextDocumentBySlug(
   slug: string
 ): (TextDocument & { sections: TextSection[] }) | undefined {
-  const docs = readJson<TextDocument[]>("text_documents.json");
+  const docs = readJson<TextDocument[]>("text_documents.json", []);
   const doc = docs.find((d) => d.slug === slug);
   if (!doc) return undefined;
 
-  const sections = readJson<TextSection[]>("text_sections.json").filter(
+  const sections = readJson<TextSection[]>("text_sections.json", []).filter(
     (s) => s.document_id === doc.id
   );
 

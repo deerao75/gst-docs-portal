@@ -138,6 +138,10 @@ try {
 
     exitCode = result.status ?? 1;
     if (exitCode === 0) {
+      if (process.env.VERCEL === "1") {
+        log("Copying data into standalone bundle for Vercel…");
+        require("./copy-standalone-data.js");
+      }
       log("Build completed successfully.");
       break;
     }
