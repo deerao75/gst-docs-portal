@@ -7,11 +7,23 @@
   "functions": {
     "src/app/api/pdf/[id]/route.ts": {
       "maxDuration": 30,
-      "includeFiles": "{data/notifications/**,All Circulars/**,All Orders/**,data/instructions/**,data/admin-uploads/**}"
+      "includeFiles": [
+        "data/notifications/**",
+        "All Circulars/**",
+        "All Orders/**",
+        "data/instructions/**",
+        "data/admin-uploads/**"
+      ]
     },
     "src/app/api/pdf-view/[id]/route.ts": {
       "maxDuration": 30,
-      "includeFiles": "{data/notifications/**,All Circulars/**,All Orders/**,data/instructions/**,data/admin-uploads/**}"
+      "includeFiles": [
+        "data/notifications/**",
+        "All Circulars/**",
+        "All Orders/**",
+        "data/instructions/**",
+        "data/admin-uploads/**"
+      ]
     },
     "src/app/api/finance-act/[id]/route.ts": {
       "includeFiles": "data/finance_acts/**"
