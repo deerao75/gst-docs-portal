@@ -1,10 +1,9 @@
 import type { TextSection } from "@/lib/db";
+import { getLegislationCrossLinkData as loadCrossLinkData } from "@/lib/catalog-data";
 import type {
   LegislationCrossLinkData,
   ResolvedLegislationLink,
 } from "@/lib/legislation-cross-links-types";
-import fs from "fs";
-import path from "path";
 
 export const CGST_ACT_SLUG = "central-goods-and-services-tax-act-2017";
 export const CGST_RULES_SLUG = "central-goods-and-services-tax-rules-2017";
@@ -21,35 +20,10 @@ const ACT_RULE_PAIRS: Record<
   [IGST_RULES_SLUG]: { actSlug: IGST_ACT_SLUG, rulesSlug: IGST_RULES_SLUG },
 };
 
-const cache = new Map<string, LegislationCrossLinkData | null>();
-
-function crossLinkFilePath(actSlug: string): string {
-  return path.join(
-    process.cwd(),
-    "data",
-    "legislation_cross_links",
-    `${actSlug}.json`
-  );
-}
-
 export function getLegislationCrossLinkData(
   actSlug: string
 ): LegislationCrossLinkData | null {
-  if (cache.has(actSlug)) {
-    return cache.get(actSlug) ?? null;
-  }
-
-  const filePath = crossLinkFilePath(actSlug);
-  if (!fs.existsSync(filePath)) {
-    cache.set(actSlug, null);
-    return null;
-  }
-
-  const data = JSON.parse(
-    fs.readFileSync(filePath, "utf-8")
-  ) as LegislationCrossLinkData;
-  cache.set(actSlug, data);
-  return data;
+  return loadCrossLinkData(actSlug);
 }
 
 function indexSectionsByNumber(

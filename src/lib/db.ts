@@ -1,6 +1,9 @@
 import type { DocumentLegalStatus } from "@/lib/document-legal-status-types";
-import fs from "fs";
-import path from "path";
+import {
+  PDF_DOCUMENTS,
+  TEXT_DOCUMENTS,
+  TEXT_SECTIONS,
+} from "@/lib/catalog-data";
 
 export type PdfDocument = {
   id: number;
@@ -45,17 +48,8 @@ export type TextSection = {
   sort_order: number;
 };
 
-function readJson<T>(filename: string, fallback: T): T {
-  const filePath = path.join(process.cwd(), "data", filename);
-  if (!fs.existsSync(filePath)) {
-    console.error(`[db] missing ${filePath}`);
-    return fallback;
-  }
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
-}
-
 function getAllPdfDocuments(): PdfDocument[] {
-  return readJson<PdfDocument[]>("pdf_documents.json", []);
+  return PDF_DOCUMENTS;
 }
 
 export function getPdfDocuments(filters?: {
@@ -108,9 +102,7 @@ export function getPdfYears(docType?: string, category?: string): number[] {
 }
 
 export function getTextDocuments(category: "act" | "rule"): TextDocument[] {
-  return readJson<TextDocument[]>("text_documents.json", []).filter(
-    (d) => d.doc_category === category
-  );
+  return TEXT_DOCUMENTS.filter((d) => d.doc_category === category);
 }
 
 export type TextDocumentWithSections = TextDocument & {
@@ -121,26 +113,22 @@ export function getTextDocumentsWithSections(
   category: "act" | "rule"
 ): TextDocumentWithSections[] {
   const docs = getTextDocuments(category);
-  const allSections = readJson<TextSection[]>("text_sections.json", []);
 
   return docs.map((doc) => ({
     ...doc,
-    sections: allSections
-      .filter((s) => s.document_id === doc.id)
-      .sort((a, b) => a.sort_order - b.sort_order),
+    sections: TEXT_SECTIONS.filter((s) => s.document_id === doc.id).sort(
+      (a, b) => a.sort_order - b.sort_order
+    ),
   }));
 }
 
 export function getTextDocumentBySlug(
   slug: string
 ): (TextDocument & { sections: TextSection[] }) | undefined {
-  const docs = readJson<TextDocument[]>("text_documents.json", []);
-  const doc = docs.find((d) => d.slug === slug);
+  const doc = TEXT_DOCUMENTS.find((d) => d.slug === slug);
   if (!doc) return undefined;
 
-  const sections = readJson<TextSection[]>("text_sections.json", []).filter(
-    (s) => s.document_id === doc.id
-  );
+  const sections = TEXT_SECTIONS.filter((s) => s.document_id === doc.id);
 
   return { ...doc, sections };
 }

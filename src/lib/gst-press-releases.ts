@@ -1,6 +1,5 @@
+import { GST_PRESS_RELEASES } from "@/lib/catalog-data";
 import { isGstCouncilMeetingMinutes } from "@/lib/gst-press-release-display";
-import fs from "fs";
-import path from "path";
 
 export type GstPressRelease = {
   id: number;
@@ -20,11 +19,7 @@ export type GstPressRelease = {
 };
 
 function readCatalog(): GstPressRelease[] {
-  const filePath = path.join(process.cwd(), "data", "gst_press_releases.json");
-  if (!fs.existsSync(filePath)) {
-    return [];
-  }
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as GstPressRelease[];
+  return GST_PRESS_RELEASES;
 }
 
 export function getGstPressReleases(): GstPressRelease[] {

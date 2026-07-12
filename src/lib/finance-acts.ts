@@ -1,5 +1,4 @@
-import fs from "fs";
-import path from "path";
+import { FINANCE_ACTS } from "@/lib/catalog-data";
 
 export type FinanceAct = {
   id: number;
@@ -17,12 +16,7 @@ export type FinanceAct = {
 };
 
 function readCatalog(): FinanceAct[] {
-  const filePath = path.join(process.cwd(), "data", "finance_acts.json");
-  if (!fs.existsSync(filePath)) {
-    console.error(`[finance-acts] missing ${filePath}`);
-    return [];
-  }
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as FinanceAct[];
+  return FINANCE_ACTS;
 }
 
 export function getFinanceActs(): FinanceAct[] {
@@ -30,7 +24,6 @@ export function getFinanceActs(): FinanceAct[] {
     .filter((act) => act.status === "ready")
     .sort((a, b) => {
       if (b.year !== a.year) return b.year - a.year;
-      // Within the same year, later enactments (e.g. Finance No. 2) appear first.
       if (a.title.includes("(No. 2)") && !b.title.includes("(No. 2)")) return -1;
       if (b.title.includes("(No. 2)") && !a.title.includes("(No. 2)")) return 1;
       return b.id - a.id;

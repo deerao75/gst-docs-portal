@@ -1,11 +1,8 @@
+import { GST_FORMS } from "@/lib/catalog-data";
 import type { GstForm } from "@/lib/gst-forms-types";
-import fs from "fs";
-import path from "path";
 
 function readCatalog(): GstForm[] {
-  const filePath = path.join(process.cwd(), "data", "gst_forms.json");
-  if (!fs.existsSync(filePath)) return [];
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as GstForm[];
+  return GST_FORMS;
 }
 
 function normalizeFormCode(code: string): string {

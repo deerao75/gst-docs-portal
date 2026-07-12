@@ -1,21 +1,11 @@
+import { GST_ADVISORIES } from "@/lib/catalog-data";
 import type {
   GstAdvisory,
   GstAdvisoryCatalog,
 } from "@/lib/gst-advisories-types";
-import fs from "fs";
-import path from "path";
 
 function readCatalog(): GstAdvisoryCatalog {
-  const filePath = path.join(process.cwd(), "data", "gst_advisories.json");
-  if (!fs.existsSync(filePath)) {
-    return {
-      source: "https://www.gst.gov.in/newsandupdates",
-      updated_at: "",
-      count: 0,
-      items: [],
-    };
-  }
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as GstAdvisoryCatalog;
+  return GST_ADVISORIES;
 }
 
 export function getGstAdvisories(): GstAdvisory[] {

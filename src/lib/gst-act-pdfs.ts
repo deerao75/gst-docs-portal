@@ -1,11 +1,8 @@
+import { GST_ACT_PDFS } from "@/lib/catalog-data";
 import type { GstActPdf } from "@/lib/gst-act-pdfs-types";
-import fs from "fs";
-import path from "path";
 
 function readCatalog(): GstActPdf[] {
-  const filePath = path.join(process.cwd(), "data", "gst_act_pdfs.json");
-  if (!fs.existsSync(filePath)) return [];
-  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as GstActPdf[];
+  return GST_ACT_PDFS;
 }
 
 export function getGstActPdfs(): GstActPdf[] {

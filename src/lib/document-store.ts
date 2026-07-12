@@ -1,6 +1,7 @@
 import crypto from "crypto";
 import fs from "fs";
 import path from "path";
+import { PDF_DOCUMENTS } from "@/lib/catalog-data";
 import type { PdfDocument } from "@/lib/db";
 import type {
   DocumentLegalStatus,
@@ -16,11 +17,7 @@ const DATA_FILE = path.join(process.cwd(), "data", "pdf_documents.json");
 const UPLOAD_ROOT = path.join(process.cwd(), "data", "admin-uploads");
 
 export function readAllPdfDocuments(): PdfDocument[] {
-  if (!fs.existsSync(DATA_FILE)) {
-    console.error(`[document-store] missing ${DATA_FILE}`);
-    return [];
-  }
-  return JSON.parse(fs.readFileSync(DATA_FILE, "utf-8")) as PdfDocument[];
+  return PDF_DOCUMENTS;
 }
 
 export function writeAllPdfDocuments(docs: PdfDocument[]): void {
@@ -86,7 +83,7 @@ export function updateDocumentAdminFields(
   id: number,
   fields: AdminDocumentUpdate
 ): PdfDocument | null {
-  const docs = readAllPdfDocuments();
+  const docs = [...readAllPdfDocuments()];
   const idx = docs.findIndex((d) => d.id === id);
   if (idx === -1) return null;
 
@@ -141,7 +138,7 @@ export type CreateAdminDocumentInput = {
 export function createAdminDocument(
   input: CreateAdminDocumentInput
 ): PdfDocument {
-  const docs = readAllPdfDocuments();
+  const docs = [...readAllPdfDocuments()];
   const hash = fileHash(input.pdfBuffer);
 
   const duplicate = docs.find((d) => d.file_hash === hash);

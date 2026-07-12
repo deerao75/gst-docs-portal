@@ -2,53 +2,45 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
-const isVercel = process.env.VERCEL === "1";
-const isWindowsLocal = process.platform === "win32" && !isVercel;
+const isWindowsLocal = process.platform === "win32" && process.env.VERCEL !== "1";
 
-const dataBundle = [
-  "./data/**/*",
+/** PDF folders traced only into API routes that stream files. */
+const pdfBundle = [
+  "./data/notifications/**/*",
+  "./data/circulars/**/*",
+  "./data/orders/**/*",
+  "./data/instructions/**/*",
+  "./data/finance_acts/**/*",
+  "./data/gst_forms/**/*",
+  "./data/gst_act_pdfs/**/*",
+  "./data/gst_press_releases/**/*",
+  "./data/admin-uploads/**/*",
   "./All Circulars/**/*",
   "./All Orders/**/*",
 ];
 
+const pdfApiRoutes = {
+  "/api/pdf/[id]": pdfBundle,
+  "/api/pdf-view/[id]": pdfBundle,
+  "/api/finance-act/[id]": pdfBundle,
+  "/api/finance-act-view/[id]": pdfBundle,
+  "/api/gst-form/[slug]": pdfBundle,
+  "/api/gst-form-view/[slug]": pdfBundle,
+  "/api/gst-act-pdf/[slug]": pdfBundle,
+  "/api/gst-act-pdf-view/[slug]": pdfBundle,
+  "/api/gst-press-release/[id]": pdfBundle,
+  "/api/gst-press-release-view/[id]": pdfBundle,
+  "/api/health": ["./data/pdf_documents.json"],
+};
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Vercel: standalone bundles the Node server; data/ is copied post-build.
-  ...(isVercel ? { output: "standalone" } : {}),
-  // Windows local builds only: skip NFT to avoid ENOENT trace flakes.
+  // Do not use output:standalone on Vercel — it breaks API routes and
+  // bundles hundreds of MB into every page serverless function.
   ...(isWindowsLocal ? { outputFileTracing: false } : {}),
   experimental: {
     outputFileTracingRoot: projectRoot,
-    ...(isVercel
-      ? {
-          outputFileTracingIncludes: {
-            "/acts": dataBundle,
-            "/acts/[slug]": dataBundle,
-            "/rules": dataBundle,
-            "/rules/[slug]": dataBundle,
-            "/rules/search": dataBundle,
-            "/acts/search": dataBundle,
-            "/documents": dataBundle,
-            "/finance-acts": dataBundle,
-            "/gst-forms": dataBundle,
-            "/gst-press-releases": dataBundle,
-            "/search": dataBundle,
-            "/admin/documents": dataBundle,
-            "/contact": dataBundle,
-            "/team": dataBundle,
-            "/api/pdf/[id]": dataBundle,
-            "/api/pdf-view/[id]": dataBundle,
-            "/api/finance-act/[id]": dataBundle,
-            "/api/finance-act-view/[id]": dataBundle,
-            "/api/gst-form/[slug]": dataBundle,
-            "/api/gst-form-view/[slug]": dataBundle,
-            "/api/gst-act-pdf/[slug]": dataBundle,
-            "/api/gst-act-pdf-view/[slug]": dataBundle,
-            "/api/gst-press-release/[id]": dataBundle,
-            "/api/gst-press-release-view/[id]": dataBundle,
-          },
-        }
-      : {}),
+    ...(!isWindowsLocal ? { outputFileTracingIncludes: pdfApiRoutes } : {}),
     serverActions: {
       bodySizeLimit: "50mb",
     },
