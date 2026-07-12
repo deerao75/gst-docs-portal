@@ -1,0 +1,28 @@
+{
+  "act_slug": "integrated-goods-and-services-tax-act-2017",
+  "rules_slug": "integrated-goods-and-services-tax-rules-2017",
+  "act_to_rules": {
+    "12": [
+      "2"
+    ],
+    "13": [
+      "2"
+    ],
+    "20": [
+      "2"
+    ]
+  },
+  "rules_to_act": {
+    "2": [
+      "12",
+      "13",
+      "20"
+    ]
+  },
+  "stats": {
+    "act_sections_linked": 3,
+    "rules_linked": 1,
+    "total_act_sections": 28,
+    "total_rules": 2
+  }
+}

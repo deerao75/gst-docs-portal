@@ -1,0 +1,33 @@
+node_modules
+.next
+out
+*.log
+.env*.local
+tsconfig.tsbuildinfo
+.build.lock
+
+# Agent / build temp files
+_*
+*.err
+build*.txt
+extract*.txt
+ingest*.txt
+populate*.txt
+run*.txt
+verify*.txt
+result.txt
+done.txt
+count_out.txt
+
+# Generated full-text search index (run build-search-index.bat)
+data/search_chunks.jsonl
+data/search_minisearch.json
+data/search_index_manifest.json
+
+# Duplicate notification source — runtime uses data/notifications/
+All Notifications/
+
+# Local ingestion sources (optional; keep docx if re-ingesting acts/rules)
+# GST_Acts_and_Rules.docx
+# Finance_Acts_GST_Provisions.docx
+data/finance_acts_source/

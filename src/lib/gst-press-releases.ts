@@ -1,0 +1,47 @@
+import { isGstCouncilMeetingMinutes } from "@/lib/gst-press-release-display";
+import fs from "fs";
+import path from "path";
+
+export type GstPressRelease = {
+  id: number;
+  sr_no: number;
+  date: string | null;
+  date_display: string;
+  title: string;
+  slug: string;
+  file_name: string;
+  file_path: string;
+  file_hash: string;
+  source_url: string;
+  original_url: string;
+  source_type: string;
+  status: string;
+  updated_at: string;
+};
+
+function readCatalog(): GstPressRelease[] {
+  const filePath = path.join(process.cwd(), "data", "gst_press_releases.json");
+  if (!fs.existsSync(filePath)) {
+    return [];
+  }
+  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as GstPressRelease[];
+}
+
+export function getGstPressReleases(): GstPressRelease[] {
+  return readCatalog()
+    .filter(
+      (item) =>
+        item.status === "ready" &&
+        isGstCouncilMeetingMinutes(item.title, item.original_url)
+    )
+    .sort((a, b) => {
+      const dateA = a.date ?? "";
+      const dateB = b.date ?? "";
+      if (dateB !== dateA) return dateB.localeCompare(dateA);
+      return b.id - a.id;
+    });
+}
+
+export function getGstPressReleaseById(id: number): GstPressRelease | undefined {
+  return getGstPressReleases().find((item) => item.id === id);
+}

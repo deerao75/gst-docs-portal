@@ -1,0 +1,353 @@
+@import "./theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans), Inter, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  button,
+  input,
+  select,
+  textarea,
+  table {
+    font: inherit;
+    letter-spacing: inherit;
+  }
+
+  button,
+  select {
+    text-transform: none;
+  }
+
+  img,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.prose-legal strong {
+  color: var(--text);
+}
+
+.summary-panel {
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange) transparent;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-[var(--border)] bg-white shadow-card;
+  }
+
+  .section-label {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-brand-orange;
+  }
+
+  .page-heading {
+    @apply text-3xl font-bold tracking-tight text-brand-black md:text-4xl;
+  }
+
+  .page-subheading {
+    @apply mt-2 max-w-2xl text-base leading-relaxed text-[var(--muted)];
+  }
+
+  .doc-card {
+    @apply relative overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-card transition-all duration-300;
+  }
+
+  .doc-card::before {
+    content: "";
+    @apply absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-orange to-brand-orange-dark opacity-0 transition-opacity duration-300;
+  }
+
+  .doc-card:hover {
+    @apply -translate-y-0.5 border-brand-orange/30 shadow-card-hover;
+  }
+
+  .doc-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .accent-bar {
+    @apply h-1 w-full bg-gradient-to-r from-brand-orange via-brand-orange-dark to-brand-orange;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-brand-orange px-6 py-3 text-base font-semibold text-white shadow-md transition-all duration-200 hover:bg-brand-orange-dark hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-lg border border-[var(--border-strong)] bg-white px-6 py-3 text-base font-semibold text-brand-black shadow-sm transition-all duration-200 hover:border-brand-orange hover:text-brand-orange;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold text-brand-black transition-colors hover:bg-brand-orange-light hover:text-brand-orange-dark;
+  }
+
+  .icon-badge {
+    @apply flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-navy to-brand-navy-deep text-lg font-bold text-brand-orange shadow-md;
+  }
+
+  .viewer-shell {
+    @apply overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-card;
+  }
+
+  .viewer-grid {
+    @apply grid grid-cols-1 gap-0 lg:grid-cols-[minmax(16rem,22%)_minmax(0,1fr)];
+  }
+
+  .viewer-grid-wide-list {
+    @apply grid grid-cols-1 gap-0 lg:grid-cols-[minmax(16rem,24%)_minmax(0,1fr)];
+  }
+
+  .viewer-grid-finance-acts {
+    @apply grid grid-cols-1 gap-0 lg:grid-cols-[minmax(22rem,34%)_minmax(0,1fr)];
+  }
+
+  .filter-band {
+    @apply border-b border-[var(--border)] bg-gradient-to-b from-white to-brand-cream/50;
+  }
+
+  .filter-label {
+    @apply text-xs font-semibold uppercase tracking-wider text-[var(--muted)];
+  }
+
+  .filter-select {
+    @apply rounded-lg border border-[var(--border)] bg-white px-3 py-2.5 text-sm shadow-sm transition-colors focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20;
+  }
+
+  .viewer-page-header {
+    @apply border-b border-[var(--border)] bg-gradient-to-r from-brand-navy-deep via-brand-navy to-brand-navy-deep px-5 py-5 lg:px-6;
+  }
+
+  .list-group-header {
+    @apply sticky top-0 border-b border-brand-orange/25 bg-gradient-to-r from-brand-navy-deep to-brand-navy px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white;
+  }
+
+  .search-input {
+    @apply rounded-lg border border-[var(--border)] bg-white px-4 py-2.5 text-sm shadow-sm transition-colors focus:border-brand-orange focus:outline-none focus:ring-2 focus:ring-brand-orange/20;
+  }
+
+  .pill-btn {
+    @apply rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors;
+  }
+
+  .pill-btn-orange {
+    @apply border-brand-orange/40 bg-brand-orange-light text-brand-orange-dark hover:border-brand-orange hover:bg-brand-orange hover:text-white;
+  }
+
+  .pill-btn-muted {
+    @apply border-[var(--border)] bg-white text-brand-black hover:border-brand-orange hover:text-brand-orange-dark;
+  }
+
+  .pill-btn-amended {
+    @apply shrink-0 border-brand-navy/25 bg-brand-cream text-brand-navy-deep hover:border-brand-orange/50 hover:bg-brand-orange-light hover:text-brand-orange-dark;
+  }
+
+  .modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-brand-navy-deep/60 p-4 backdrop-blur-sm;
+  }
+
+  .modal-panel {
+    @apply relative max-h-[85vh] w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-card-hover;
+  }
+
+  .modal-close {
+    @apply absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-lg border border-[var(--border)] bg-white text-lg font-bold leading-none text-[var(--muted)] transition-colors hover:border-brand-orange hover:text-brand-orange;
+  }
+
+  .modal-header {
+    @apply border-b border-brand-orange/30 bg-gradient-to-r from-brand-navy-deep via-brand-navy to-brand-navy-deep px-5 py-4 pr-14 text-white;
+  }
+
+  .info-tile {
+    @apply rounded-xl border border-[var(--border)] bg-gradient-to-b from-white to-brand-cream/40 px-4 py-3 shadow-sm transition-colors hover:border-brand-orange/30;
+  }
+
+  .doc-list-table th {
+    overflow: hidden;
+    vertical-align: top;
+  }
+
+  .doc-list-table td {
+    vertical-align: top;
+  }
+
+  .doc-list-table .doc-list-details {
+    overflow: visible;
+    white-space: normal;
+    word-break: break-word;
+    position: relative;
+  }
+
+  .doc-list-table tbody tr {
+    position: relative;
+  }
+
+  .hero-mesh {
+    background-image:
+      radial-gradient(at 40% 20%, rgba(196, 95, 23, 0.25) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(30, 41, 59, 0.4) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(196, 95, 23, 0.1) 0px, transparent 50%);
+  }
+
+  .legislation-prose__para {
+    margin-top: 0;
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .legislation-prose__para + .legislation-prose__para {
+    margin-top: 0.875rem;
+  }
+
+  .legislation-prose__para--heading {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+    text-align-last: left;
+  }
+
+  .legislation-prose__para--heading + .legislation-prose__para {
+    margin-top: 0.625rem;
+  }
+
+  .legislation-ref {
+    font-size: 0.72em;
+    font-weight: 600;
+    line-height: 0;
+    vertical-align: super;
+  }
+
+  .legislation-notes {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #d4d4d4;
+  }
+
+  .legislation-notes__panel {
+    border-radius: 0.375rem;
+    background: #f1f5f9;
+    padding: 1rem 1.25rem;
+  }
+
+  .legislation-notes__item {
+    font-size: 0.8125rem;
+    line-height: 1.65;
+    color: #525252;
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  .legislation-notes__item + .legislation-notes__item {
+    margin-top: 0.875rem;
+  }
+
+  .legislation-notes__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .legislation-source-link {
+    @apply inline-flex max-w-full items-center rounded-md border border-brand-orange/40 bg-white px-3 py-1.5 text-left text-xs font-semibold leading-snug text-brand-orange-dark transition-colors hover:border-brand-orange hover:bg-brand-orange-light;
+  }
+
+  .gst-advisory-prose p,
+  .gst-advisory-prose li {
+    margin-top: 0.75rem;
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  .gst-advisory-prose p:first-child,
+  .gst-advisory-prose li:first-child {
+    margin-top: 0;
+  }
+
+  .gst-advisory-prose table {
+    width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+
+  .gst-advisory-prose th,
+  .gst-advisory-prose td {
+    border: 1px solid #d4d4d4;
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+  }
+
+  .gst-advisory-prose th {
+    background: #f5f5f5;
+    text-align: left;
+  }
+
+  .gst-advisory-prose a {
+    color: var(--brand-orange-dark, #c2410c);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    word-break: break-word;
+  }
+
+  .gst-advisory-prose ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+  }
+}

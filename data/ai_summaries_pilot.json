@@ -1,0 +1,358 @@
+{
+  "enabled": true,
+  "scope": "notification/central_tax/2025",
+  "summaries": {
+    "5": {
+      "document_id": 5,
+      "notification_no": "01/2025-Central Tax",
+      "summary": "The Government of India, through Notification No. 01/2025-Central Tax, issued on 10th January 2025, has made significant amendments to the existing notification No. 83/2020-Central Tax, which was originally published on 10th November 2020 under G.S.R. 699(E). This amendment is enacted under the authority of the first proviso to sub-section (1) of section 37, in conjunction with section 168 of the Central Goods and Services Tax Act, 2017. The key changes include an extension of the deadline for filing GSTR-1 for the tax period of December 2024, which is now due by 13th January 2025. Furthermore, for registered persons required to furnish returns under the proviso of section 39(1), the deadline for the tax periods from October to December 2024 has been extended to 15th January 2025. This amendment follows the previous notification No. 09/2024-Central Tax, dated 12th April 2024, which also pertained to GSTR-1 filing deadlines. The notification is set to be published in the Gazette of India, Extraordinary, Part II, Section 3, Sub-section (i), ensuring that all stakeholders are informed of these changes in a timely manner. The extensions aim to provide relief to taxpayers during the specified periods, allowing for better compliance with the GST framework.",
+      "key_points": [
+        "Notification No. 01/2025-Central Tax issued on 10th January 2025.",
+        "Amends notification No. 83/2020-Central Tax dated 10th November 2020.",
+        "Extends GSTR-1 filing deadline for December 2024 to 13th January 2025.",
+        "Extends GSTR-1 filing deadline for October to December 2024 to 15th January 2025.",
+        "Applicable under section 37(1) and section 168 of the CGST Act, 2017.",
+        "Previous amendment was by notification No. 09/2024-Central Tax dated 12th April 2024.",
+        "Published in the Gazette of India, Extraordinary, Part II, Section 3, Sub-section (i)."
+      ],
+      "practical_application": "This notification affects registered persons required to file GSTR-1 for the tax periods of December 2024 and October to December 2024. Specifically, GSTR-1 for December 2024 must be filed by 13th January 2025, while GSTR-1 for the tax periods from October to December 2024 must be submitted by 15th January 2025. All registered persons across India are subject to these new deadlines, as no state-specific distinctions are made in this notification. The amended parent notification is No. 83/2020-Central Tax. Failure to file by these extended deadlines may result in late fees or interest, and there is a risk of the portal flagging late filings, which could complicate future compliance efforts.",
+      "generated_at": "2026-06-29 11:57:41",
+      "model": "gpt-4o-mini"
+    },
+    "6": {
+      "document_id": 6,
+      "notification_no": "02/2025-Central Tax",
+      "summary": "Notification No. 02/2025-Central Tax, issued on 10th January 2025 by the Central Board of Indirect Taxes and Customs, extends the deadline for filing the GSTR-3B return electronically for the month of December 2024. The new deadline for this return is set for the 22nd of January 2025, as per sub-section (1) of section 39 of the Central Goods and Services Tax Act, 2017. Additionally, the notification addresses the quarterly GSTR-3B filing for the period of October to December 2024, with varying deadlines based on the registered persons' principal place of business. Specifically, registered persons in the states of Chhattisgarh, Madhya Pradesh, Gujarat, Maharashtra, Karnataka, Goa, Kerala, Tamil Nadu, Telangana, Andhra Pradesh, and the Union territories of Daman and Diu, Dadra and Nagar Haveli, Puducherry, Andaman and Nicobar Islands, or Lakshadweep must file by the 24th of January 2025. In contrast, those in Himachal Pradesh, Punjab, Uttarakhand, Haryana, Rajasthan, Uttar Pradesh, Bihar, Sikkim, Arunachal Pradesh, Nagaland, Manipur, Mizoram, Tripura, Meghalaya, Assam, West Bengal, Jharkhand, or Odisha, along with the Union territories of Jammu and Kashmir, Ladakh, Chandigarh, or Delhi, have until the 26th of January 2025 to submit their returns. This extension is granted under the authority of section 39(6) and section 168 of the CGST Act, reflecting the government's ongoing efforts to facilitate compliance among registered persons during this tax period.",
+      "key_points": [
+        "Notification No. 02/2025-Central Tax issued on 10th January 2025.",
+        "Extends GSTR-3B filing deadline for December 2024 to 22nd January 2025.",
+        "Quarterly GSTR-3B filing deadline for October to December 2024 varies by state.",
+        "States with a 24th January 2025 deadline include Chhattisgarh, Madhya Pradesh, Gujarat, and others.",
+        "States with a 26th January 2025 deadline include Himachal Pradesh, Punjab, and others.",
+        "The extension is based on the powers conferred by section 39 and section 168 of the CGST Act.",
+        "The notification is issued by the Central Board of Indirect Taxes and Customs.",
+        "The filing is required through the common portal by registered persons."
+      ],
+      "practical_application": "This notification affects registered persons required to file GSTR-3B for December 2024 and those filing quarterly for the period of October to December 2024. Monthly filers must submit their GSTR-3B by 22nd January 2025. For quarterly filers, those in specified states must file by 24th January 2025, while others have until 26th January 2025. The states with the earlier deadline include Chhattisgarh, Madhya Pradesh, Gujarat, and others, while the latter deadline applies to states like Himachal Pradesh and Punjab. The tax periods in question are December 2024 for monthly filers and October to December 2024 for quarterly filers. Failure to file by these dates may result in late fees or interest, and there is a risk of the portal flagging late filings.",
+      "generated_at": "2026-06-29 11:57:50",
+      "model": "gpt-4o-mini"
+    },
+    "7": {
+      "document_id": 7,
+      "notification_no": "03/2025-Central Tax",
+      "summary": "Notification No. 03/2025-Central Tax, issued on 10th January 2025 by the Central Board of Indirect Taxes and Customs (CBIC), extends the deadline for non-resident taxable persons to file their return in FORM GSTR-5 for the month of December 2024. This extension is granted under sub-section (6) of section 39 of the Central Goods and Services Tax Act, 2017, in conjunction with section 168 of the same Act. The original deadline for filing GSTR-5 was set prior to this notification, but the new deadline is now established as the 15th day of January 2025. This amendment is also made in accordance with rule 63 of the Central Goods and Services Tax Rules, 2017. The notification is referenced under F.No. CBIC-20021/2/2025-GST, indicating the official documentation associated with this change. The extension aims to provide additional time for compliance, ensuring that non-resident taxable persons can meet their filing obligations without incurring penalties. This proactive measure reflects the government's commitment to facilitating ease of doing business and compliance among non-resident entities operating within India. The effective date of this extension is the date of issuance of the notification, which is 10th January 2025.",
+      "key_points": [
+        "Notification No. 03/2025-Central Tax issued on 10th January 2025.",
+        "Extends the deadline for non-resident taxable persons to file GSTR-5.",
+        "Original deadline for GSTR-5 for December 2024 was earlier than 15th January 2025.",
+        "New deadline for filing GSTR-5 is 15th January 2025.",
+        "Applicable under sub-section (5) of section 39 of the CGST Act, 2017.",
+        "Amendment made under rule 63 of the Central Goods and Services Tax Rules, 2017.",
+        "Issued by the Central Board of Indirect Taxes and Customs (CBIC).",
+        "F.No. CBIC-20021/2/2025-GST referenced in the notification."
+      ],
+      "practical_application": "Non-resident taxable persons who are required to file GSTR-5 for December 2024 are affected by this notification. They must file FORM GSTR-5 by the new deadline of 15th January 2025. This extension applies uniformly across all states and Union Territories in India. The tax period for this filing is December 2024, and the amendment is made under Notification No. 03/2025-Central Tax. Failure to file by the new deadline may result in a late fee or interest, as the portal may flag late filings, impacting compliance status.",
+      "generated_at": "2026-06-29 11:57:58",
+      "model": "gpt-4o-mini"
+    },
+    "8": {
+      "document_id": 8,
+      "notification_no": "04/2025-Central Tax",
+      "summary": "The Government of India, through Notification No. 04/2025-Central Tax, issued on 10th January 2025, has extended the deadline for filing the return in FORM GSTR-6 by Input Service Distributors for the tax period of December 2024. The new deadline is set for the 15th day of January 2025, providing additional time for compliance. This extension is granted under the authority of sub-section (6) of section 39 of the Central Goods and Services Tax Act, 2017, in conjunction with section 168 of the same Act. The notification amends the provisions outlined in rule 65 of the Central Goods and Services Tax Rules, 2017, which governs the filing of returns. The decision to extend the deadline was made based on the recommendations of the GST Council, reflecting the government's responsiveness to the needs of taxpayers. The notification is referenced under F. No. CBIC-20021/2/2025-GST and is issued by the Central Board of Indirect Taxes and Customs. This extension is significant for Input Service Distributors who must ensure that their filings are completed by the new deadline to avoid any potential penalties or issues with compliance.",
+      "key_points": [
+        "Notification No. 04/2025-Central Tax issued on 10th January 2025.",
+        "Extends the deadline for filing GSTR-6 for December 2024.",
+        "New deadline for GSTR-6 is 15th January 2025.",
+        "Applicable to Input Service Distributors.",
+        "Amends provisions under section 39 and rule 65 of the CGST Rules.",
+        "Issued by the Central Board of Indirect Taxes and Customs.",
+        "Filing extension is based on recommendations from the GST Council.",
+        "Reference F. No. CBIC-20021/2/2025-GST included."
+      ],
+      "practical_application": "Input Service Distributors are affected by this notification as they must file FORM GSTR-6 for the tax period of December 2024. The new deadline for filing this form is 15th January 2025. This extension applies uniformly across all states and Union Territories, allowing all Input Service Distributors additional time to prepare their returns. It is crucial to note that failure to file by this new deadline may result in late fees or other compliance issues, as the portal may flag late filings. Practitioners should ensure that all necessary documentation is in order to facilitate timely submission by the revised date.",
+      "generated_at": "2026-06-29 11:58:05",
+      "model": "gpt-4o-mini"
+    },
+    "9": {
+      "document_id": 9,
+      "notification_no": "05/2025-Central Tax",
+      "summary": "Notification No. 05/2025-Central Tax, issued on 10th January 2025 by the Central Board of Indirect Taxes and Customs, extends the deadline for filing GSTR-7 for the month of December 2024. This extension is granted under the authority of sub-section (6) of section 39 and section 168 of the Central Goods and Services Tax Act, 2017. Registered persons who are required to deduct tax at source under section 51 of the Act are affected by this notification. The new deadline for submitting GSTR-7 is now set for the 12th day of January 2025. This amendment aims to provide relief to taxpayers by allowing additional time to comply with their filing obligations. The notification references the F.No.CBIC-20021/2/2025-GST and is part of the ongoing efforts to streamline GST compliance. The extension is particularly significant for those who may have faced challenges in meeting the original deadline. Overall, this notification reflects the government's responsiveness to the needs of taxpayers in the context of the GST framework.",
+      "key_points": [
+        "Notification No. 05/2025-Central Tax issued on 10th January 2025.",
+        "The notification extends the deadline for filing GSTR-7.",
+        "The extended deadline for GSTR-7 is now 12th January 2025.",
+        "This applies to registered persons required to deduct tax at source under section 51.",
+        "The tax period affected is December 2024.",
+        "The extension is granted under section 39(6) and section 168 of the CGST Act.",
+        "The notification is issued by the Central Board of Indirect Taxes and Customs."
+      ],
+      "practical_application": "This notification affects registered persons required to deduct tax at source under section 51 of the CGST Act. These taxpayers must file FORM GSTR-7 for the tax period of December 2024. The new deadline for filing this form is 12th January 2025. There are no state-specific distinctions in this notification, as it applies uniformly across all states and Union Territories. Failure to file GSTR-7 by the extended deadline may result in a late fee or interest, and could trigger a late-filing flag on the GST portal, impacting future compliance. Practitioners should ensure that their clients are aware of this extension to avoid any penalties.",
+      "generated_at": "2026-06-29 11:58:12",
+      "model": "gpt-4o-mini"
+    },
+    "10": {
+      "document_id": 10,
+      "notification_no": "06/2025-Central Tax",
+      "summary": "Notification No. 06/2025-Central Tax, issued on 10th January 2025 by the Central Board of Indirect Taxes and Customs, extends the deadline for filing FORM GSTR-8. This form is crucial for e-commerce operators as it contains details of outward supplies of goods or services made through them. The original deadline for filing this statement for the month of December 2024 has been extended to 12th January 2025. This extension is granted under the first proviso to sub-section (4) of section 52, in conjunction with section 168 of the Central Goods and Services Tax Act, 2017. The notification reflects the recommendations made by the GST Council, emphasizing the government's responsiveness to the needs of e-commerce operators. The notification is referenced under F.No. CBIC-20021/2/2025-GST and aims to facilitate compliance for those required to submit this statement. By providing additional time, the government seeks to alleviate the burden on businesses during the busy holiday season, ensuring that they can accurately report their transactions without facing penalties for late submission. This extension is particularly significant for e-commerce operators who rely on timely and accurate reporting to maintain compliance with GST regulations.",
+      "key_points": [
+        "Notification No. 06/2025-Central Tax issued on 10th January 2025.",
+        "Extends the deadline for filing FORM GSTR-8.",
+        "Applicable for the month of December 2024.",
+        "New deadline for FORM GSTR-8 is 12th January 2025.",
+        "Authority issuing the notification is the Central Board of Indirect Taxes and Customs.",
+        "Cited sections include section 52 and section 168 of the CGST Act, 2017.",
+        "The extension is based on the recommendations of the GST Council."
+      ],
+      "practical_application": "E-commerce operators who are required to file FORM GSTR-8 for December 2024 are affected by this notification. They must submit this form by the new deadline of 12th January 2025. This extension applies uniformly across all states and Union Territories in India. The tax period in question is December 2024, and the amended parent notification is No. 06/2025-Central Tax. Failure to file by this new deadline may result in late fees or interest, as the portal may flag late filings, impacting the operator's compliance status.",
+      "generated_at": "2026-06-29 11:58:18",
+      "model": "gpt-4o-mini"
+    },
+    "11": {
+      "document_id": 11,
+      "notification_no": "07/2025-Central Tax",
+      "summary": "The Government of India, through Notification No. 07/2025-Central Tax issued on 23rd January 2025, has made significant amendments to the Central Goods and Services Tax Rules, 2017. This notification, issued by the Central Board of Indirect Taxes and Customs, introduces rule 16A, which allows for the granting of temporary identification numbers to individuals who are not liable for registration under the Act but are required to make payments. Additionally, rule 19 has been amended to include the intimation furnished by composition taxpayers in FORM GST CMP-02. Furthermore, rule 87 has been updated to reference rule 16A concerning the common portal. The existing FORM REG-12 has been substituted with a new format for temporary registration, which includes detailed information about the individual receiving the temporary identification number. The effective date for these amendments will be notified later, and it is important to note that the previous amendments were made via G.S.R. 626(E) on 8th October 2024. This notification is part of the ongoing efforts to streamline GST compliance and registration processes.",
+      "key_points": [
+        "Notification No. 07/2025-Central Tax issued on 23rd January 2025.",
+        "Amends the Central Goods and Services Tax Rules, 2017.",
+        "Introduces rule 16A for granting temporary identification numbers.",
+        "Amends rule 19 to include intimation by composition taxpayers in FORM GST CMP-02.",
+        "Inserts reference to rule 16A in rule 87 regarding the common portal.",
+        "Substitutes FORM REG-12 with a new format for temporary registration.",
+        "Effective date of the amendments will be notified later.",
+        "Previous amendments were made via G.S.R. 626(E) on 8th October 2024."
+      ],
+      "practical_application": "This notification primarily affects individuals who are not liable for GST registration but need to make payments under the Act. They will need to file for a temporary identification number using the newly formatted FORM GST REG-12. The exact date for filing will be announced later, as the effective date of these amendments is yet to be notified. The tax periods applicable will be determined based on the issuance of the temporary identification number. Practitioners should note that failure to apply for proper registration within ninety days of receiving the temporary identification number may lead to complications in compliance. Additionally, there is a risk of late-filing flags on the GST portal if the necessary actions are not taken promptly.",
+      "generated_at": "2026-06-29 11:58:25",
+      "model": "gpt-4o-mini"
+    },
+    "12": {
+      "document_id": 12,
+      "notification_no": "08/2025-Central Tax",
+      "summary": "The Government of India, through Notification No. 08/2025-Central Tax, issued on 23rd January 2025, has announced a waiver of late fees under section 47 of the Central Goods and Services Tax Act, 2017, for the annual return in FORM GSTR-9 pertaining to the financial years 2017-18, 2018-19, 2019-20, 2020-21, 2021-22, and 2022-23. This waiver is specifically applicable to registered persons who were mandated to submit a reconciliation statement in FORM GSTR-9C along with their annual return in FORM GSTR-9 but failed to do so in a timely manner. To benefit from this waiver, these individuals must ensure that they submit FORM GSTR-9C by the deadline of 31st March 2025. It is important to note that while the late fee for delayed submissions is waived, there will be no refunds for any late fees that have already been paid for the delayed furnishing of FORM GSTR-9C. This notification is issued under the authority of section 128 of the Central Goods and Services Tax Act, 2017, and follows the recommendations of the GST Council. The notification is referenced under No. CBIC-20001/15/2024-GST and aims to provide relief to taxpayers who have faced challenges in meeting their compliance obligations during the specified financial years.",
+      "key_points": [
+        "Notification No. 08/2025-Central Tax issued on 23rd January 2025.",
+        "Waives late fee under section 47 for FORM GSTR-9 for financial years 2017-18 to 2022-23.",
+        "Applicable to registered persons required to furnish FORM GSTR-9C along with FORM GSTR-9.",
+        "Late fee waiver applies only if FORM GSTR-9C is submitted by 31st March 2025.",
+        "No refund of late fees already paid for delayed FORM GSTR-9C submissions.",
+        "Cited statutory section: Section 128 of the Central Goods and Services Tax Act, 2017.",
+        "The notification is based on recommendations from the GST Council."
+      ],
+      "practical_application": "This notification affects registered persons who are required to file FORM GSTR-9 for the financial years 2017-18 to 2022-23. These filers must submit FORM GSTR-9C by 31st March 2025 to avail of the late fee waiver. The waiver applies to late fees incurred under section 47 for the delayed submission of FORM GSTR-9C. It is crucial for these taxpayers to note that while the late fee is waived, any late fees already paid will not be refunded. The tax periods in question span from 2017-18 to 2022-23, and the notification is issued under No. CBIC-20001/15/2024-GST. Failure to comply with the new deadline may result in the risk of late-filing flags on the GST portal.",
+      "generated_at": "2026-06-29 11:58:34",
+      "model": "gpt-4o-mini"
+    },
+    "13": {
+      "document_id": 13,
+      "notification_no": "09/2025-Central Tax",
+      "summary": "The Government of India, through Notification No. 09/2025-Central Tax, issued on 11th February 2025, has made significant amendments to the Central Goods and Services Tax (Amendment) Rules, 2024. This notification is issued under the authority of section 164 of the Central Goods and Services Tax Act, 2017, and references the parent notification No. 12/2024-Central Tax, which was published in the Gazette of India, Extraordinary, Part II, Section 3, Sub-section (i), with G.S.R. number 376(E) on 10th July 2024. The notification specifies that Rules 2, 24, 27, and 32 will come into force immediately on 11th February 2025, while Rules 8, 37, and clause (ii) of rule 38 will take effect from 1st April 2025. This staggered implementation allows for a phased approach to compliance with the new rules. The Central Board of Indirect Taxes and Customs is responsible for this notification, which aims to enhance the operational framework of the GST regime. Stakeholders should be aware of these changes as they may impact their compliance requirements and reporting obligations under the GST framework. The notification serves as a crucial update for businesses and tax professionals navigating the evolving GST landscape in India.",
+      "key_points": [
+        "Notification No. 09/2025-Central Tax issued on 11th February 2025.",
+        "Amends provisions of the Central Goods and Services Tax (Amendment) Rules, 2024.",
+        "Rules 2, 24, 27, and 32 come into force on 11th February 2025.",
+        "Rules 8, 37, and clause (ii) of rule 38 come into force on 1st April 2025.",
+        "Issued by the Central Board of Indirect Taxes and Customs.",
+        "Cited under section 164 of the Central Goods and Services Tax Act, 2017.",
+        "Parent notification for these rules is No. 12/2024-Central Tax.",
+        "G.S.R. number for the parent notification is G.S.R. 376(E), dated 10th July 2024."
+      ],
+      "practical_application": "This notification primarily affects businesses and tax professionals who are required to comply with the Central Goods and Services Tax rules. Specifically, those involved with Rules 2, 24, 27, and 32 must take note that these provisions are effective immediately from 11th February 2025. Additionally, those dealing with Rules 8, 37, and clause (ii) of rule 38 should prepare for compliance starting 1st April 2025. The relevant forms and compliance requirements will be aligned with these rules, and businesses should ensure they are ready to implement any necessary changes. The tax periods affected will correspond to the effective dates of these rules. Failure to comply with the new provisions may result in penalties or late fees, and businesses should be vigilant to avoid any late-filing flags on the GST portal.",
+      "generated_at": "2026-06-29 11:58:45",
+      "model": "gpt-4o-mini"
+    },
+    "14": {
+      "document_id": 14,
+      "notification_no": "10/2025-Central Tax",
+      "summary": "The Government of India issued Notification No. 10/2025-Central Tax on 13th March 2025, amending the earlier notification No. 02/2017-Central Tax, which was published in the Gazette of India, Extraordinary, under G.S.R. 609(E) on 19th June 2017. This amendment, made under the powers conferred by section 3 read with section 5 of the Central Goods and Services Tax Act, 2017 and section 3 of the Integrated Goods and Services Tax Act, 2017, substitutes the entries for several serial numbers in the original notification. Specifically, it updates serial number 7 to include districts in Alwar, Rajasthan; serial number 23 for Chennai Outer Districts in Tamil Nadu; serial number 49 for Jaipur districts in Rajasthan; serial number 53 for Jodhpur districts in Rajasthan; serial number 63 for Madurai districts in Tamil Nadu; serial number 100 for Tiruchirapalli districts in Tamil Nadu; and serial number 102 for Udaipur districts in Rajasthan. These changes are effective immediately upon publication in the Gazette and reflect the latest geographical classifications for GST purposes. The last amendment to the principal notification was made by notification No. 27/2024-Central Tax on 25th November 2024, indicating ongoing adjustments to the GST framework as it pertains to district classifications across states.",
+      "key_points": [
+        "Notification No. 10/2025-Central Tax issued on 2025-03-13.",
+        "Amends notification No. 02/2017-Central Tax, G.S.R. 609(E) dated 19th June 2017.",
+        "Substitutes entries for serial numbers 7, 23, 49, 53, 63, 100, and 102.",
+        "New entries specify districts in Rajasthan and Tamil Nadu.",
+        "Effective from the date of publication in the Gazette of India.",
+        "Last amended by notification No. 27/2024-Central Tax on 25th November 2024.",
+        "Changes affect the classification of certain districts for GST purposes.",
+        "No specific compliance deadlines or forms mentioned in this notification."
+      ],
+      "practical_application": "This notification primarily affects businesses operating in the specified districts of Rajasthan and Tamil Nadu. Practitioners should note that there are no specific forms or filing deadlines mentioned in this notification. However, businesses in the affected districts should review their GST classifications and ensure they align with the updated entries for serial numbers 7, 23, 49, 53, 63, 100, and 102. The changes are effective immediately, and businesses should be cautious of potential implications on their GST filings. Failure to comply with the updated classifications may lead to issues with tax assessments or disputes. It is advisable for businesses to monitor their GST portal for any flags related to late filing or classification errors as a result of these changes.",
+      "generated_at": "2026-06-29 11:58:52",
+      "model": "gpt-4o-mini"
+    },
+    "15": {
+      "document_id": 15,
+      "notification_no": "11/2025-Central Tax",
+      "summary": "Notification No. 11/2025-Central Tax, issued on 27th March 2025, amends the Central Goods and Services Tax Rules, 2017, under the authority of section 164 of the Central Goods and Services Tax Act, 2017. This amendment comes into effect immediately upon its publication in the Official Gazette. The key changes involve rule 164, specifically addressing tax refund applications. The amendment clarifies that no refund will be granted for any tax, interest, or penalty that has already been paid in full prior to the commencement of the Central Goods and Services Tax (Second Amendment) Rules, 2025. Additionally, it specifies that if a notice or order includes a tax demand partially for the period mentioned in section 128A and partially for another period, the applicant must inform the appellate authority of their intention not to pursue the appeal for the specified period. This notification also references the previous amendment made via G.S.R. 72(E) on 23rd January 2025, ensuring that the legal framework remains consistent and clear for taxpayers and practitioners alike. The changes aim to streamline the appeal process and clarify the conditions under which refunds can be claimed, thereby enhancing compliance and reducing disputes.",
+      "key_points": [
+        "Notification No. 11/2025-Central Tax issued on 27th March 2025.",
+        "Amends the Central Goods and Services Tax Rules, 2017.",
+        "Effective from the date of publication in the Official Gazette.",
+        "Introduces changes to rule 164 regarding tax refund applications.",
+        "Clarifies that no refund is available for tax already discharged prior to the amendment.",
+        "Specifies conditions under which an appeal can be withdrawn or pursued.",
+        "References section 164 and section 128A of the Central Goods and Services Tax Act, 2017.",
+        "Previous amendment was made via G.S.R. 72(E) on 23rd January 2025."
+      ],
+      "practical_application": "This notification primarily affects taxpayers who are involved in filing appeals related to tax demands. Taxpayers must be aware that they need to file their appeal applications in accordance with the amended rule 164 of the Central Goods and Services Tax Rules, 2017. Specifically, if a notice includes a demand for tax partially for the period mentioned in section 128A, they must inform the appellate authority of their decision not to pursue the appeal for that period. This notification does not specify a particular form to be filed, but it is crucial for affected taxpayers to act promptly to avoid complications. The tax periods in question relate to demands from 1st July 2017 to 31st March 2020. Failure to comply with these provisions may result in the appeal being deemed withdrawn for the specified period, which could lead to a loss of relief or other consequences. Practitioners should advise clients to review their pending appeals in light of this amendment to mitigate any risks associated with late filing or non-compliance.",
+      "generated_at": "2026-06-29 11:59:00",
+      "model": "gpt-4o-mini"
+    },
+    "16": {
+      "document_id": 16,
+      "notification_no": "12/2025-Central Tax",
+      "summary": "On 20th August 2025, the Government of India, through Notification No. 12/2025-Central Tax, extended the due date for filing the GSTR-3B return for the month of July 2025. This extension applies specifically to registered persons whose principal place of business is located in the districts of Mumbai (City), Mumbai (sub-urban), Thane, Raigad, and Palghar in the State of Maharashtra. The new deadline for submitting the GSTR-3B is now set for the 27th of August 2025. This decision was made under the authority of sub-section (6) of section 39 of the Central Goods and Services Tax Act, 2017, which governs the filing of returns. The requirement to file is based on sub-section (1) of section 39 and clause (i) of sub-rule (1) of rule 61 of the Central Goods and Services Tax Rules, 2017. The notification was issued by the Central Board of Indirect Taxes and Customs, as indicated by the reference number F. No. CBIC-20006/45/2025-GST. This extension aims to provide relief to the affected taxpayers in the specified districts, allowing them additional time to comply with their tax obligations without incurring penalties for late filing. The effective date of this extension is crucial for ensuring that the registered persons in these districts can meet their compliance requirements without undue stress during this period.",
+      "key_points": [
+        "Notification No. 12/2025-Central Tax issued on 20th August 2025.",
+        "Due date for filing GSTR-3B for July 2025 extended to 27th August 2025.",
+        "Applicable to registered persons in Mumbai (City), Mumbai (sub-urban), Thane, Raigad, and Palghar districts.",
+        "Extension granted under sub-section (6) of section 39 of the CGST Act, 2017.",
+        "Filing requirement is under sub-section (1) of section 39 and rule 61 of the CGST Rules, 2017.",
+        "The notification was issued by the Central Board of Indirect Taxes and Customs.",
+        "F. No. CBIC-20006/45/2025-GST referenced in the notification."
+      ],
+      "practical_application": "This notification affects registered persons in the districts of Mumbai (City), Mumbai (sub-urban), Thane, Raigad, and Palghar who are required to file GSTR-3B for July 2025. They must submit their GSTR-3B return by 27th August 2025. This extension is specifically for the tax period of July 2025, as outlined in Notification No. 12/2025-Central Tax. Failure to file by this new deadline may result in late fees or interest, as the portal may flag late filings. Practitioners should ensure that their clients in the specified districts are aware of this extension and take the necessary steps to file their returns accordingly.",
+      "generated_at": "2026-06-29 11:59:07",
+      "model": "gpt-4o-mini"
+    },
+    "17": {
+      "document_id": 17,
+      "notification_no": "13/2025-Central Tax",
+      "summary": "The Government of India, through Notification No. 13/2025-Central Tax, issued on January 1, 2025, amends the Central Goods and Services Tax Rules, 2017. This notification, effective from September 22, 2025, introduces several significant changes, including an amendment to Rule 31A, where the figure '128' is replaced with '140'. Additionally, provisions effective from April 1, 2025, and October 1, 2025, are outlined, including the introduction of a new rule 110A that allows appeals to be heard by a single Member Bench. The notification also revises FORM GST RFD-04 and FORM GST APL-02A, streamlining the refund process and appeal procedures. Furthermore, FORM GSTR-9 has been amended to enhance the reporting of Input Tax Credit (ITC) details, ensuring clarity in the financial year reporting. These amendments aim to improve compliance and efficiency within the GST framework. Practitioners should note that these changes may lead to potential late fees and risks of late-filing flags on the GST portal if not adhered to properly.",
+      "key_points": [
+        "Notification No. 13/2025-Central Tax issued on 01 January 2025.",
+        "Amends the Central Goods and Services Tax Rules, 2017.",
+        "Effective from 22 September 2025, with specific provisions effective from 01 April 2025 and 01 October 2025.",
+        "Rule 31A amended to change the figure from '128' to '140'.",
+        "New rule 110A introduced for appeals to be heard by a single Member Bench.",
+        "Changes to FORM GST RFD-04 and FORM GST APL-02A.",
+        "Amendments to FORM GSTR-9 regarding ITC details and reporting.",
+        "Consequences include potential late fees and risks of late-filing flags on the portal."
+      ],
+      "practical_application": "This notification primarily affects all GST practitioners and registered taxpayers who file FORM GSTR-9 for the financial year 2024-25. They must ensure that the revised details of ITC are accurately reported in the amended FORM GSTR-9 by the due date of December 31, 2025. Additionally, those involved in the appeals process should be aware of the new provisions under rule 110A, which allows for appeals to be heard by a single Member Bench. The tax periods impacted include the financial year 2024-25, with the amended parent notification being 13/2025-Central Tax. Failure to comply with these amendments may result in late fees or the risk of late-filing flags on the GST portal, emphasizing the importance of accurate and timely submissions.",
+      "generated_at": "2026-06-29 11:59:15",
+      "model": "gpt-4o-mini"
+    },
+    "18": {
+      "document_id": 18,
+      "notification_no": "14/2025-Central Tax",
+      "summary": "Notification No. 14/2025-Central Tax, issued on 17th September 2025 by the Central Board of Indirect Taxes and Customs, introduces significant changes regarding the refund process under the Central Goods and Services Tax Act, 2017. Effective from 1st October 2025, this notification specifies that certain registered persons will not be eligible for refunds on a provisional basis. This includes individuals who have not completed Aadhaar authentication as mandated by rule 10B of the CGST Rules. Additionally, the notification identifies specific goods that are excluded from provisional refunds, including areca nuts (Chapter 0802), pan masala (Tariff item 2106 90 20), tobacco and manufactured tobacco substitutes (Chapter 24), and essential oils (Chapter 3301). The authority for this notification is derived from sub-section (6) of section 54 of the CGST Act, 2017. Furthermore, the interpretation of terms such as 'tariff item', 'heading', 'sub-heading', and 'Chapter' is aligned with the First Schedule of the Customs Tariff Act, 1975, ensuring consistency in application. This notification aims to tighten the refund process and enhance compliance among registered persons dealing with the specified goods.",
+      "key_points": [
+        "Notification No. 14/2025-Central Tax issued on 17th September 2025.",
+        "Effective date of the notification is 1st October 2025.",
+        "Refunds on a provisional basis are not allowed for certain registered persons.",
+        "Affected persons include those who have not undergone Aadhaar authentication under rule 10B.",
+        "Specific goods listed include areca nuts, pan masala, tobacco, and essential oils.",
+        "The notification is issued under the authority of section 54(6) of the CGST Act, 2017.",
+        "Interpretation rules from the Customs Tariff Act, 1975 apply to this notification."
+      ],
+      "practical_application": "This notification affects registered persons who are required to file for refunds under the CGST Act, specifically those who have not undergone Aadhaar authentication and those dealing with specified goods. These individuals must be aware that they cannot file for provisional refunds starting from 1st October 2025. The specific goods affected include areca nuts, pan masala, tobacco, and essential oils. Practitioners should advise clients to review their compliance with Aadhaar authentication under rule 10B to avoid issues with refund eligibility. The tax periods for which this applies are those commencing from the effective date. Failure to comply with these requirements may result in the inability to claim refunds, leading to potential financial implications. Additionally, late filing flags may be raised on the GST portal for those who do not adhere to these new stipulations.",
+      "generated_at": "2026-06-29 11:59:21",
+      "model": "gpt-4o-mini"
+    },
+    "19": {
+      "document_id": 19,
+      "notification_no": "15/2025-Central Tax",
+      "summary": "Notification No. 15/2025-Central Tax, issued on January 1, 2025, by the Government of India, Ministry of Finance, Department of Revenue, exempts registered persons whose aggregate turnover in any financial year does not exceed two crore rupees from the requirement to file an annual return for the financial year 2024-25 and onwards. This exemption is granted under the first proviso to sub-section (1) of section 44 of the Central Goods and Services Tax Act, 2017 (12 of 2017). The notification was issued following recommendations from the GST Council, indicating a significant policy shift aimed at easing compliance burdens for smaller taxpayers. The notification is referenced under F. No CBIC-20001/2/2025-GST and is signed by Raushan Kumar, Under Secretary. This change is expected to benefit a large number of small businesses, allowing them to focus on their operations without the additional administrative burden of annual return filings. The effective date of this exemption aligns with the commencement of the financial year 2024-25, thus providing clarity and immediate relief to eligible taxpayers. Overall, this notification reflects the government's ongoing efforts to simplify GST compliance for smaller entities in the Indian economy.",
+      "key_points": [
+        "Notification No. 15/2025-Central Tax issued on January 1, 2025.",
+        "Exempts registered persons with aggregate turnover up to two crore rupees from filing annual return.",
+        "Applicable for the financial year 2024-25 onwards.",
+        "Issued under the first proviso to sub-section (1) of section 44 of the CGST Act, 2017.",
+        "Recommendations were made by the GST Council.",
+        "Signed by Raushan Kumar, Under Secretary.",
+        "Notification number for reference: F. No CBIC-20001/2/2025-GST."
+      ],
+      "practical_application": "This notification affects registered persons with an aggregate turnover of up to two crore rupees for the financial year 2024-25 and onwards. These taxpayers are no longer required to file the annual return in Form GSTR-9. The exemption applies from the commencement of the financial year 2024-25, meaning that no annual return needs to be filed for that period. The notification does not specify any state or UT distinctions, making it applicable uniformly across India. Taxpayers falling under this category should note that failure to comply with the filing requirements, if applicable, could lead to penalties or late fees; however, in this case, they are exempt from such obligations. This change significantly reduces the compliance burden for small businesses, allowing them to allocate resources more effectively.",
+      "generated_at": "2026-06-29 11:59:28",
+      "model": "gpt-4o-mini"
+    },
+    "20": {
+      "document_id": 20,
+      "notification_no": "16/2025-Central Tax",
+      "summary": "Notification No. 16/2025-Central Tax, issued by the Central Board of Indirect Taxes and Customs on 17th September 2025, announces the effective date for certain provisions of the Finance Act, 2025. Specifically, it appoints 1st October 2025 as the date when clauses (ii) and (iii) of section 121, along with sections 122 to 124 and sections 126 to 134 of the Finance Act, 2025, will come into force. This notification is part of the government's ongoing efforts to implement the provisions of the Finance Act, 2025, which aims to enhance the framework of indirect taxation in India. The notification is published in the Gazette of India, Extraordinary, ensuring that it is accessible to all stakeholders. The reference number for this notification is F. No.CBIC-20001/2/2025-GST, which is important for record-keeping and compliance purposes. The provisions being enacted are expected to impact various aspects of GST compliance and administration, although specific details on the nature of these provisions are not provided in the notification itself. Stakeholders should prepare for the upcoming changes as the effective date approaches, ensuring that they are ready to comply with the new regulations as mandated by the Central Government.",
+      "key_points": [
+        "Notification No. 16/2025-Central Tax issued on 17th September 2025.",
+        "Effective date for new provisions is 1st October 2025.",
+        "Clauses (ii) and (iii) of section 121, sections 122 to 124, and sections 126 to 134 of the Finance Act, 2025 will come into force.",
+        "The notification is issued by the Central Board of Indirect Taxes and Customs.",
+        "The notification is part of the implementation of the Finance Act, 2025.",
+        "The notification is published in the Gazette of India, Extraordinary.",
+        "The notification is referenced under F. No.CBIC-20001/2/2025-GST."
+      ],
+      "practical_application": "This notification affects all taxpayers who will be subject to the provisions of the Finance Act, 2025, starting from 1st October 2025. Practitioners should be aware that no specific forms are mentioned in this notification, but the provisions will likely influence various compliance requirements under GST. Taxpayers should review the implications of clauses (ii) and (iii) of section 121, as well as sections 122 to 124 and sections 126 to 134, to understand their obligations. Since the notification does not specify any state or UT distinctions, it applies uniformly across India. Taxpayers should be prepared for potential changes in compliance processes and ensure that they are ready to adapt to the new provisions by the effective date. Failure to comply with the new regulations may lead to penalties or other compliance issues, including the risk of late-filing flags on the GST portal.",
+      "generated_at": "2026-06-29 11:59:35",
+      "model": "gpt-4o-mini"
+    },
+    "21": {
+      "document_id": 21,
+      "notification_no": "17/2025-Central Tax",
+      "summary": "On 18 October 2025, the Government of India issued Notification No. 17/2025-Central Tax, which extends the deadline for filing the GSTR-3B return electronically through the common portal. This extension applies to registered persons under the provisions of sub-section (1) of section 39 of the Central Goods and Services Tax Act, 2017. The new deadline for filing GSTR-3B for the month of September 2025 is now set for the 25th of October 2025. Additionally, the notification also extends the deadline for the quarterly GSTR-3B return covering the tax period from July 2025 to September 2025, which must also be filed by the same date, 25 October 2025. This decision was made by the Commissioner based on the recommendations of the GST Council and is supported by the statutory provisions of section 39(1) and section 168 of the CGST Act. The notification is referenced under F. No. CBIC-20006/45/2025-GST, emphasizing the importance of electronic filing through the common portal for compliance. The extension aims to facilitate taxpayers in meeting their obligations without incurring penalties for late filing during this period.",
+      "key_points": [
+        "Notification No. 17/2025-Central Tax issued on 18 October 2025.",
+        "Extends the deadline for filing GSTR-3B for September 2025.",
+        "New deadline for GSTR-3B is 25 October 2025.",
+        "Also extends the deadline for quarterly GSTR-3B for July to September 2025.",
+        "Applicable under section 39(1) and section 168 of the CGST Act, 2017.",
+        "Issued by the Commissioner on the recommendations of the GST Council.",
+        "Filing must be done electronically through the common portal.",
+        "Reference F. No. CBIC-20006/45/2025-GST included."
+      ],
+      "practical_application": "This notification affects all registered persons who are required to file GSTR-3B for the month of September 2025 and the quarterly GSTR-3B for the period from July to September 2025. They must file the GSTR-3B form electronically through the common portal by 25 October 2025. There is no distinction made by state or UT in this notification; the extended deadline applies uniformly across all states. The tax periods involved are September 2025 for monthly filers and July to September 2025 for quarterly filers. Failure to file by this new deadline may result in late fees or interest, and there is a risk of the portal flagging late filings if not submitted on time.",
+      "generated_at": "2026-06-29 11:59:42",
+      "model": "gpt-4o-mini"
+    },
+    "22": {
+      "document_id": 22,
+      "notification_no": "18/2025-Central Tax",
+      "summary": "The Government of India, through Notification No. 18/2025-Central Tax, issued on 31st October 2025, has amended the Central Goods and Services Tax Rules, 2017, effective from 1st November 2025. This amendment introduces rule 9A, which mandates that any person applying for registration under rules 8, 12, or 17 will be granted registration electronically within three working days, based on data analysis and risk parameters. Additionally, rule 14A has been inserted, allowing taxpayers with a monthly output tax liability not exceeding ₹2.5 lakh to opt for electronic registration, provided they authenticate their Aadhaar number. The amendment also introduces FORM GST REG-32 for those wishing to withdraw from this option, with specific conditions regarding the filing of returns and the status of their registration. The existing forms, including GST REG-01, REG-02, REG-03, REG-04, REG-05, and REG-33, have been amended to incorporate these changes. Notably, the withdrawal application under rule 14A must meet certain criteria, including the filing of returns for a minimum period before the application can be processed. This comprehensive amendment aims to streamline the registration process and enhance compliance among taxpayers.",
+      "key_points": [
+        "Notification No. 18/2025-Central Tax issued on 31st October 2025.",
+        "Effective from 1st November 2025.",
+        "Introduces rule 9A for electronic registration within three working days.",
+        "Inserts rule 14A allowing registration for taxpayers with monthly output tax liability below ₹2.5 lakh.",
+        "Requires Aadhaar authentication for registration under rule 14A.",
+        "Introduces FORM GST REG-32 for withdrawal from registration under rule 14A.",
+        "Amends existing forms including GST REG-01, REG-02, REG-03, REG-04, REG-05, and REG-33.",
+        "Specifies conditions for withdrawal applications and related timelines."
+      ],
+      "practical_application": "This notification primarily affects taxpayers applying for registration under rules 8, 12, or 17, particularly those with a monthly output tax liability below ₹2.5 lakh. They must file their application for registration using FORM GST REG-01 by 1st November 2025. Additionally, those opting for registration under rule 14A must ensure Aadhaar authentication is completed. If a registered person wishes to withdraw from this option, they must submit FORM GST REG-32, ensuring all pending returns are filed. The withdrawal application cannot be submitted if any proceedings under section 29 are pending. Failure to comply with these requirements may result in the rejection of the application or a risk of late-filing flags on the GST portal. It is essential to adhere to the timelines specified in the notification to avoid any penalties or complications.",
+      "generated_at": "2026-06-29 11:59:53",
+      "model": "gpt-4o-mini"
+    },
+    "72": {
+      "document_id": 72,
+      "notification_no": "09/2025-Central Tax",
+      "summary": "On 18th September 2025, the Government of India, through the Ministry of Finance (Department of Revenue), issued Notification No. 09/2025-Central Tax, which serves as a corrigendum to the previously published notification number 9/2025 - Union Territory Tax (Rate) dated 17th September 2025. This corrigendum, referenced under G.S.R. 646(E), was published in the Gazette of India, Extraordinary, Part II, Section 3, Sub-section (i). The primary purpose of this corrigendum is to rectify specific line items on page 106 of the original notification. The corrections involve a sequential renumbering of items, where 'b.' is changed to 'a.', 'c.' to 'b.', and so on, through to 'i.' which is now 'h.'. These amendments ensure clarity and accuracy in the application of the Union Territory Tax rates as outlined in the original notification. The issuance of this corrigendum underscores the government's commitment to maintaining precise legislative documentation and facilitating compliance among taxpayers. The effective date of these corrections aligns with the original notification's date, ensuring that the changes are immediately applicable to all relevant stakeholders.",
+      "key_points": [
+        "Notification No. 09/2025-Central Tax issued on 18th September 2025.",
+        "This is a corrigendum to notification number 9/2025 - Union Territory Tax (Rate) dated 17th September 2025.",
+        "The corrigendum corrects line items on page 106 of the original notification.",
+        "Changes include renumbering from 'b.' to 'a.' and so forth for subsequent items.",
+        "The original notification was published in the Gazette of India, Extraordinary, Part II, Section 3, Sub-section (i).",
+        "The G.S.R. number for the original notification is G.S.R. 646(E).",
+        "The corrections affect the numbering of items listed in the original notification.",
+        "The corrigendum is issued by the Ministry of Finance, Department of Revenue."
+      ],
+      "practical_application": "This corrigendum affects all stakeholders referencing the Union Territory Tax (Rate) notification, particularly those involved in compliance with the tax rates outlined. Practitioners must review the corrected line items in the original notification number 9/2025 to ensure accurate application of tax rates. There are no specific forms to file as a result of this corrigendum, but practitioners should be aware of the implications of these corrections on their tax calculations and reporting. The original notification was effective from 17th September 2025, and thus, any compliance actions should reflect the corrected numbering. Failure to apply the correct tax rates as per the amended notification could lead to discrepancies in tax filings, potentially resulting in penalties or interest for late payment. It is essential to monitor the portal for any late-filing flags that may arise from incorrect application of the tax rates.",
+      "generated_at": "2026-06-29 12:00:00",
+      "model": "gpt-4o-mini"
+    },
+    "74": {
+      "document_id": 74,
+      "notification_no": "10/2025-Central Tax",
+      "summary": "Notification No. 10/2025-Central Tax, issued on September 18, 2025, serves as a corrigendum to the previously published notification number 10/2025-Union Territory Tax (Rate) dated September 17, 2025. This corrigendum addresses specific errors in the enumeration of items listed in the original notification. The corrections involve changing the references from (xxi) to (xxx) to (i) to (x) respectively, as detailed on page 72 of the original notification. The original notification was published in the Gazette of India, Extraordinary, Part II, Section 3, Sub-section (i), and carries the G.S.R. number G.S.R. 662(E). The issuing authority for both notifications is the Ministry of Finance, Department of Revenue. This corrigendum is referenced under F No. CBIC-190341/188/2025-TRU, ensuring that the correct enumerations are applied in the context of Union Territory Tax rates. The effective date of these corrections aligns with the original notification, maintaining the integrity of the tax framework as intended by the government.",
+      "key_points": [
+        "Notification No. 10/2025-Central Tax issued on 2025-09-18.",
+        "This is a corrigendum to notification number 10/2025-Union Territory Tax (Rate) dated 2025-09-17.",
+        "The corrigendum corrects enumerations from (xxi) to (xxx) to (i) to (x) respectively.",
+        "The changes are specified on page 72 of the original notification.",
+        "The original notification was published in the Gazette of India, Extraordinary, Part II, Section 3, Sub-section (i).",
+        "The G.S.R. number for the original notification is G.S.R. 662(E).",
+        "The issuing authority is the Ministry of Finance, Department of Revenue.",
+        "The corrigendum is referenced under F No. CBIC-190341/188/2025-TRU."
+      ],
+      "practical_application": "This corrigendum affects all stakeholders involved in Union Territory Tax compliance, particularly those referencing the original notification for tax rate applications. Practitioners must ensure that they refer to the corrected enumerations in the notification when applying tax rates. The original notification and its corrigendum must be reviewed to avoid misinterpretation of the tax rates applicable. There are no specific filing deadlines or forms mentioned in this corrigendum, but practitioners should be aware of the original notification's implications on their tax calculations. Failure to apply the correct enumerations could lead to incorrect tax filings, potentially resulting in penalties or disputes with tax authorities.",
+      "generated_at": "2026-06-29 12:00:07",
+      "model": "gpt-4o-mini"
+    }
+  }
+}
