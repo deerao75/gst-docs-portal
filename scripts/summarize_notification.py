@@ -486,10 +486,12 @@ def build_detailed_bullets(
     if substitution and substitution not in bullets:
         bullets.append(substitution)
 
-    if forms:
-        bullets.append(
-            f"The compliance impact centres on {', '.join(forms[:4])} and related GST portal filings."
-        )
+    if forms and ("extend" in body.lower() or "extended" in body.lower()):
+        date_bits = ", ".join(dates[:2]) if dates else ""
+        if date_bits:
+            bullets.append(
+                f"Registered persons must furnish {', '.join(forms[:3])} by {date_bits}."
+            )
 
     if period:
         bullets.append(f"The change applies to tax period {period}.")
@@ -565,17 +567,37 @@ def build_detailed_summary(
     bullets: List[str],
     body: str,
 ) -> str:
-    parts = [
-        f"Notification No. {notification_no} under {label} {effect[0].lower() + effect[1:] if effect else 'updates GST law.'}"
-    ]
+    from summary_style import clean_grammar, merge_paragraphs, notifies_to_prose
+
+    lead = notifies_to_prose(effect or "Notifies regulatory changes.")
+    parts = [lead]
+
+    skip_bullet = re.compile(
+        r"compliance impact centres on|Geographic scope:|Compliance teams should",
+        re.I,
+    )
+    for bullet in bullets[1:6]:
+        b = clean_text(bullet)
+        if not b or b.lower() == effect.lower() or skip_bullet.search(b):
+            continue
+        if re.match(r"^notifies\b", b, re.I):
+            b = notifies_to_prose(b)
+        if b not in parts:
+            parts.append(b)
+
     substantive = extract_substantive_sentences(body)
     for s in substantive[:4]:
-        if s not in parts and len(" ".join(parts)) < 900:
+        if s not in parts:
             parts.append(s)
-    if len(parts) < 3 and len(bullets) > 2:
-        parts.extend(bullets[1:4])
-    text = " ".join(parts)
-    return clean_text(text) if len(text) <= 1200 else clean_text(text[:1197] + "...")
+
+    if len(parts) < 2:
+        parts.append(
+            f"The notification is issued under {label} as Notification No. {notification_no}."
+        )
+
+    text = merge_paragraphs(parts, min_words=50)
+    text = clean_grammar(text)
+    return text if len(text) <= 1200 else clean_grammar(text[:1197] + "...")
 
 
 def build_detailed_practical(

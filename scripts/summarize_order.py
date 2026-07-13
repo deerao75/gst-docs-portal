@@ -153,7 +153,8 @@ def _first_sentences(text: str, max_sentences: int = 3, max_chars: int = 520) ->
     if not text:
         return ""
     skip = re.compile(
-        r"Madam\s*/\s*Sir|Subject\s*:|Kind reference|Kind attention|Yours faithfully",
+        r"Madam\s*/\s*Sir|Subject\s*:|Kind reference|Kind attention|Yours faithfully|"
+        r"the powers conferred|In exercise of the powers|Government of India|Ministry of Finance",
         re.I,
     )
     parts = re.split(r"(?<=[.!?])\s+", text)
@@ -177,16 +178,14 @@ def build_order_paragraph_summary(
     list_title: str | None = None,
 ) -> str:
     """One or two paragraphs for Show Summary modal."""
-    label = CATEGORY_LABELS.get(category or "", "GST Order")
-    no_part = order_no.split("-")[0].strip() if order_no else ""
-    opener = f"{label} No. {no_part}" if no_part else label
+    from summary_style import subject_to_prose_lead
 
     subject = extract_subject(text, full=True)
     topic = subject or (list_title or "").strip()
     lead = (
-        f"{opener} deals with {topic.rstrip('.')}."
+        subject_to_prose_lead(topic)
         if topic
-        else f"{opener} issues GST administrative directions."
+        else "Issues GST administrative directions."
     )
 
     points = extract_numbered_points(text)

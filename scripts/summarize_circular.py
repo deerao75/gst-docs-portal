@@ -294,13 +294,10 @@ def build_circular_paragraph_summary(
     points = extract_numbered_points(text)
     title = (list_title or "").strip()
 
-    no_part = circular_no.split("-")[0].strip() if circular_no else ""
-    opener = f"{label} No. {no_part}" if no_part else label
+    from summary_style import subject_to_prose_lead
+
     topic = _strip_subject_suffix(subject or title or "")
-    if topic:
-        lead = f"{opener} deals with {topic.rstrip('.')}."
-    else:
-        lead = f"{opener} provides GST guidance."
+    lead = subject_to_prose_lead(topic) if topic else "Provides GST guidance."
 
     para1_body = ""
     if points:
@@ -356,7 +353,11 @@ def build_circular_paragraph_summary(
             return f"{para1}\n\n{para2}"
         return para2
 
-    return para1 if len(para1) >= 60 else f"{lead} Refer to the full circular for operative details and references."
+    if len(para1) >= 60:
+        return para1
+    if topic:
+        return f"{lead} See Circular No. {circular_no} for the detailed guidance and references."
+    return f"{lead} See Circular No. {circular_no} for operative details."
 
 
 def build_circular_summary(

@@ -7,6 +7,7 @@ GENERIC_PATTERNS = [
     r"under Central Tax notifies",
     r"under Integrated Tax notifies",
     r"under Union Territory Tax notifies",
+    r"notifies regulatory changes under",
     r"Compliance teams should",
     r"read the full notification",
     r"read the full circular",
