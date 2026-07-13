@@ -69,7 +69,16 @@ def load_env_local() -> None:
 
 def extract_full_pdf_text(path: str, max_chars: int = 90000) -> str:
     try:
-        reader = PdfReader(path)
+        import logging
+        import warnings
+
+        logging.getLogger("pypdf").setLevel(logging.ERROR)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            try:
+                reader = PdfReader(path, strict=False)
+            except TypeError:
+                reader = PdfReader(path)
         chunks: list[str] = []
         total = 0
         for page in reader.pages:

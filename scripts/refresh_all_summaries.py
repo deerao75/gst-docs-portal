@@ -102,34 +102,46 @@ def main() -> None:
     skipped_manual = 0
     improved = 0
     still_generic = 0
+    errors = 0
 
     for idx, doc in enumerate(targets, 1):
         if doc.get("summary_manual") and not args.force:
             skipped_manual += 1
             continue
 
-        path = resolve_path(doc.get("file_path") or "")
-        text = extract_full_pdf_text(path, max_chars=90000) if os.path.isfile(path) else ""
+        try:
+            path = resolve_path(doc.get("file_path") or "")
+            text = (
+                extract_full_pdf_text(path, max_chars=90000)
+                if os.path.isfile(path)
+                else ""
+            )
 
-        doc_type = doc.get("doc_type")
-        if doc_type == "notification":
-            new_summary = rebuild_notification(doc, text)
-        elif doc_type == "circular":
-            new_summary = rebuild_circular(doc, text)
-        else:
-            new_summary = rebuild_order(doc, text)
+            doc_type = doc.get("doc_type")
+            if doc_type == "notification":
+                new_summary = rebuild_notification(doc, text)
+            elif doc_type == "circular":
+                new_summary = rebuild_circular(doc, text)
+            else:
+                new_summary = rebuild_order(doc, text)
 
-        old_summary = (doc.get("summary") or "").strip()
-        was_bad = is_generic_summary(old_summary)
+            old_summary = (doc.get("summary") or "").strip()
+            was_bad = is_generic_summary(old_summary)
 
-        if not args.dry_run:
-            doc["summary"] = new_summary
+            if not args.dry_run:
+                doc["summary"] = new_summary
 
-        updated += 1
-        if was_bad and not is_generic_summary(new_summary):
-            improved += 1
-        if is_generic_summary(new_summary):
-            still_generic += 1
+            updated += 1
+            if was_bad and not is_generic_summary(new_summary):
+                improved += 1
+            if is_generic_summary(new_summary):
+                still_generic += 1
+        except Exception as exc:
+            errors += 1
+            print(
+                f"  WARN [{idx}] {doc.get('notification_no')}: {exc}",
+                file=sys.stderr,
+            )
 
         if idx % 100 == 0:
             print(f"  … processed {idx}/{len(targets)}")
@@ -143,7 +155,8 @@ def main() -> None:
 
     print(
         f"\nDone: {updated} rebuilt, {improved} improved from generic, "
-        f"{still_generic} still generic, {skipped_manual} skipped (manual)"
+        f"{still_generic} still generic, {skipped_manual} skipped (manual), "
+        f"{errors} errors"
     )
     if args.dry_run:
         print("(dry-run — no files written)")
@@ -151,3 +164,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    sys.exit(0)
